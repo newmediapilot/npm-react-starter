@@ -4,7 +4,10 @@ class Counter extends Component {
     state = {
         count: 1,
         imageURL: 'https://picsum.photos/200',
-        bsClass: 'btn btn-danger'
+        bsClass: 'btn btn-danger',
+        tags: [
+            1, 2, 3
+        ]
     };
 
     styles = {
@@ -14,17 +17,28 @@ class Counter extends Component {
     };
 
     render() {
-        let classes = 'badge badge-primary m-2';
-        if (this.state.count > 0) classes = classes.replace('primary', 'warning');
         return (
             <div>
                 <div style={{color: 'red'}}>World</div>
                 <div style={this.styles}>Hello</div>
                 <img src={this.state.imageURL}/>
-                <div className={classes}>{this.formatCount()}</div>
+                <div className={this.applyBadgeClass()}>{this.formatCount()}</div>
                 <button className={this.state.bsClass}>Increment</button>
+                <ul>
+                    {this.getUl()}
+                </ul>
             </div>
         )
+    }
+
+    getUl() {
+        return this.state.tags.map(tag => <li key={tag}>{tag}</li>);
+    }
+
+    applyBadgeClass() {
+        let classes = 'badge badge-primary m-2';
+        if (this.state.count > 0) classes = classes.replace('primary', 'warning');
+        return classes;
     }
 
     formatCount() {
