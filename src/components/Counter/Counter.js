@@ -24,15 +24,23 @@ class Counter extends Component {
                 <img src={this.state.imageURL}/>
                 <div className={this.applyBadgeClass()}>{this.formatCount()}</div>
                 <button className={this.state.bsClass}>Increment</button>
-                <ul>
-                    {this.getUl()}
-                </ul>
+                {this.renderUl()}
             </div>
         )
     }
 
-    getUl() {
-        return this.state.tags.map(tag => <li key={tag}>{tag}</li>);
+    renderUl() {
+        if (this.state.tags || this.state.tags.length) {
+            return (
+                <ul>
+                    {this.state.tags.map(tag => <li key={tag}>{tag}</li>)}
+                </ul>
+            );
+        } else {
+            return (
+                <p>no tags!</p>
+            );
+        }
     }
 
     applyBadgeClass() {
