@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/scss/bootstrap.scss';
-import home from "./components/home/home";
+import login from "./components/login/login";
+import auth from "./components/auth/auth";
 
 function App() {
     return (
-        home()
-    );
+        auth()
+    )
 }
 
 export default App;
