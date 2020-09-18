@@ -3,13 +3,12 @@ This project was bootstrapped with [Create React App]
 #Setup\
 ```
 npm i
-npm i -g create-components-react
 ```
 #Development
 ###
 Generate component via
 ```
-ccr create -c scss -i src/components/ComponentName
+npx generate-react-cli component Box --type=class
 ```
 ### `npm start`
 Runs the pp in the development mode.
