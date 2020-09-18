@@ -1,12 +1,12 @@
 This project was bootstrapped with [Create React App]
 (https://github.com/facebook/create-react-app)
+
 #Setup
 ```
 npm i
 ```
 #Development
-###
-Generate component via
+###Generate component via
 ```
 npx generate-react-cli component Box --type=class
 ```
