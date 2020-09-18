@@ -13,6 +13,9 @@ npm i
 npx generate-react-cli component Box --type=class
 ```
 
+Custom template defined under `templates/`
+@see `generate-react-cli.json` for component schema definition
+
 ### `npm start`
 Runs the pp in the development mode.
 
