@@ -1,6 +1,9 @@
 This project was bootstrapped with [Create React App]
 (https://github.com/facebook/create-react-app)
 
+Component generator code powered by [Generate React CLI]
+(https://www.npmjs.com/package/generate-react-cli)
+
 # Setup
 
 ```
@@ -15,7 +18,6 @@ npx generate-react-cli component Box --type=class
 
 - Custom template defined under `templates/`
 - Check `generate-react-cli.json` for component schema definition
-- Full documentation can be found here (https://www.npmjs.com/package/generate-react-cli)
 
 ### `npm start`
 Runs the pp in the development mode.
