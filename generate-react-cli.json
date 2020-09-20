@@ -22,6 +22,18 @@
       "withStory": false,
       "withStyle": true,
       "withTest": true
+    },
+    "function": {
+      "customTemplates": {
+        "component": "templates/function/component.js",
+        "style": "templates/function/style.scss",
+        "test": "templates/function/test.js"
+      },
+      "path": "src/components",
+      "withLazy": false,
+      "withStory": false,
+      "withStyle": true,
+      "withTest": true
     }
   }
 }
